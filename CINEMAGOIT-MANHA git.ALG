@@ -4,6 +4,7 @@ Var
    filas, lugares:inteiro
    cadeiras: vetor[1..20, 1..20] de Caractere
    base: vetor[1..20, 1..20] de Caractere
+   selecao:caractere
    Posicao,lin,col,QuantosBilhetes:inteiro
    cliente,codcliente,teste,reserva,continua: caractere
    ValorBilhete:real
@@ -12,7 +13,7 @@ procedimento cabecalho()
 inicio
    limpatela
    Escreval("======================================")
-   Escreval("|        Cinema   Go-It              |")
+   Escreval("|        Cinema  Instituto Go-It     |")
    Escreval("======================================")
 fimprocedimento
 
@@ -93,6 +94,7 @@ inicio
                   se cadeiras[lin,col]= "XX" entao
                      Escreval("Cadeira ja Reservada !!")
                   SENAO
+                    selecao<-selecao+ cadeiras[lin,col]
                      cadeiras[lin,col]<- "XX"
                   fimse
                fimse
@@ -136,7 +138,8 @@ inicio
    para lin <- 1 ate filas faca
       para col <- 1 ate lugares faca
          Se cadeiras[lin,col] = "XX" entao
-            ESCREVA(base[lin,col]:5)
+            //ESCREVA(base[lin,col]:5)
+            escreva(selecao)
          fimse
       fimpara
    fimpara
