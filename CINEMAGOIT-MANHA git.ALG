@@ -7,13 +7,20 @@ Var
    selecao:caractere
    Posicao,lin,col,QuantosBilhetes:inteiro
    cliente,codcliente,teste,reserva,continua: caractere
-   ValorBilhete:real
+   ValorBilhete,testegithub:real
+
+Procedimento testegit()
+inicio
+escreva("estou testando o meu github")
+
+fimprocedimento
+
 
 procedimento cabecalho()
 inicio
    limpatela
    Escreval("======================================")
-   Escreval("|        Cinema  Instituto Go-It     |")
+   Escreval("|        Teatro  Instituto Go-It     |")
    Escreval("======================================")
 fimprocedimento
 
