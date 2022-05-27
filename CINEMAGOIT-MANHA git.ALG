@@ -11,7 +11,7 @@ Var
 
 Procedimento testegit()
 inicio
-escreva("estou testando o meu github")
+escreva("teste 2 estou testando o meu github")
 
 fimprocedimento
 
